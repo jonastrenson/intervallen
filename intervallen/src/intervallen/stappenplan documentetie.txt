@@ -1,0 +1,73 @@
+Hoe documenteer ik een data-abstractie?
+
+A. Documenteer de API
+	= Schrijf de publieke documentatie, bedoeld voor de klant-
+	ontwikkelaar.
+	
+	1. Schrijf een regel informele documentatie bij de klasse.
+		- Ofwel "Elke instantie van deze klasse slaat een ... op"
+		- Ofwel "Elke instantie van deze klasse stelt een ... voor"
+
+	2. Documenteer de abstracte toestandsinvarianten.
+
+	3. Documenteer de publieke constructoren en mutatoren.
+
+
+
+B. Documenteer de representatie
+	= hoe worden de gegevens inwendig voorgesteld?
+	= Schrijf de representatie-invarianten neer.
+	
+	Sanity checks:
+	1. De inspectoren mogen, wanneer opgeroepen op een toestand
+	   waarin de representatie-invarianten gelden, niet crashen.
+	2. Als de representatie-invarianten gelden, dan moeten ook
+	   de abstracte toestandsinvarianten gelden.
+	   
+
+Hoe bouw ik een data-abstractie?
+
+A. Definieer de API.
+	1. Definieer de klasse zelf.
+	
+	2. Schrijf een regel informele documentatie bij de klasse.
+	- Ofwel "Elke instantie van deze klasse slaat een ... op"
+	- Ofwel "Elke instantie van deze klasse stelt een ... voor"
+	
+	3. Declareer de inspectoren.
+	
+	4. Documenteer de abstracte toestandsinvarianten.
+	
+	5. Declareer en documenteer de publieke constuctoren en mutatoren.
+	
+B. Definieer de implementatie
+	1. Definieer de representatie.
+		= hoe worden de gegevens inwendig voorgesteld?
+		
+		1.1 Definieer de (private) velden.
+		1.2 Schrijf de representatie-invarianten neer.
+		1.3 Implementeer de inspectoren.
+	
+		Sanity checks:
+		1. De inspectoren mogen, wanneer opgeroepen op een toestand
+	   	waarin de representatie-invarianten gelden, niet crashen.
+		2. Als de representatie-invarianten gelden, dan moeten ook
+	   	de abstracte toestandsinvarianten gelden.
+	   
+	2. Implementeer de constructoren en mutatoren.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
