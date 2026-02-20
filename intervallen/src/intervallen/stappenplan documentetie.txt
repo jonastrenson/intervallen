@@ -8,7 +8,7 @@ A. Documenteer de API
 		- Ofwel "Elke instantie van deze klasse slaat een ... op"
 		- Ofwel "Elke instantie van deze klasse stelt een ... voor"
 
-	2. Documenteer de abstracte toestandsinvarianten.
+	2. Documenteer de abstractetoestandsinvarianten.
 
 	3. Documenteer de publieke constructoren en mutatoren.
 
@@ -36,7 +36,7 @@ A. Definieer de API.
 	
 	3. Declareer de inspectoren.
 	
-	4. Documenteer de abstracte toestandsinvarianten.
+	4. Documenteer de abstractetoestandsinvarianten.
 	
 	5. Declareer en documenteer de publieke constuctoren en mutatoren.
 	
