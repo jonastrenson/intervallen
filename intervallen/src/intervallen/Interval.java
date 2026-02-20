@@ -3,20 +3,20 @@ package intervallen;
 
 
 public class Interval {
-	int ondergrens;
-	int lengte;
+	private int ondergrens;
+	private int lengte;
 	
 
-	static void setOndergrens(Interval interval, int ondergrens) {
-		interval.ondergrens = ondergrens;
+	void setOndergrens(int ondergrens) {
+		this.ondergrens = ondergrens;
 	}
 
-	static void setBovengrens(Interval interval, int bovengrens) {
-	interval.lengte = bovengrens - interval.ondergrens;
+	void setBovengrens(int bovengrens) {
+		this.lengte = bovengrens - this.ondergrens;
 	}
 
-	static int getLength(Interval interval) {
-	return interval.lengte;
+	int getLength() {
+		return this.lengte;
 	}
 	
 }
